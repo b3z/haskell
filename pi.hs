@@ -1,3 +1,4 @@
+-- calculate pi up to a certain accuracy
 computePi :: Double -> Double
 computePi n = help n 0.0
     where help n pi | n <  0 = pi
