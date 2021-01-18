@@ -2,7 +2,7 @@
 euler :: Int -> Double
 euler n = e n 0
     where e n a | n <  0 = a
-                | n >= 0 = e (n-1) (a + (1.0/(fac n)))
+                | n >= 0 = e (n-1) (a + (1.0/fromIntegral (fac n)))
 
 -- calculates the factorial of a number
 fac :: Int -> Int
